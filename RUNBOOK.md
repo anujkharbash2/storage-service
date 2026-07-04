@@ -17,3 +17,8 @@ This is a real gap flagged for Team 8/founders: production launch should not
 proceed on free tier without either (a) upgrading to a paid tier with automated 
 backups, or (b) a scheduled, monitored version of our own backup script with 
 offsite storage — not just a laptop.
+
+## Encryption at rest
+Supabase encrypts both the Postgres database and Storage buckets at rest by default 
+(AES-256, managed by the underlying cloud provider). No additional action required 
+on our end — verified via Supabase's security documentation.
